@@ -1,4 +1,5 @@
 import React from "react";
+import "./PrintArticle.css"
 import { validateText, validationUrl } from "../util";
 
 export default function PrintArticle(props) {

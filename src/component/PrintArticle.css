@@ -1,0 +1,25 @@
+.card {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+  }
+  .card img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 0px;
+  }
+  
+  .card p,
+  h3 {
+    width: 450px;
+    margin: 0px;
+    padding-left: 10px;
+  }
