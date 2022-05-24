@@ -43,7 +43,7 @@ export const createServer = () => {
         "https://pngimage.net/wp-content/uploads/2018/06/nature-png-hd-" +
         i +
         ".png",
-      title: textLorem.slice(i, 10 + i),
+      title: letterUpper(textLorem.slice(i, 10 + i)),
       excerpt: textLorem.slice(i, textLorem.length - 1),
       category: textLorem.slice(
         textLorem.length - 30 + i,
@@ -54,4 +54,22 @@ export const createServer = () => {
   }
   return arr;
 };
+
+function letterUpper(string) {
+  let arrText = string.trim().split("");
+  let textUpper = "";
+  for (let i = 0; i < arrText.length; i++) {
+    if (i === 0) {
+      let letterUpper = arrText[i].toLocaleUpperCase();
+      arrText[i] = letterUpper;
+    } else {
+      let letterLower = arrText[i].toLocaleLowerCase();
+      arrText[i] = letterLower;
+    }
+
+    textUpper += arrText[i];
+  }
+
+  return textUpper
+}
 
